@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stan0\\source\\repos\\EZGLib\\EZGLib\\EZGLib.csproj": {}
+    "D:\\Projects\\GITHUB\\EZGLib\\EZGLib\\EZGLib\\EZGLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stan0\\source\\repos\\EZGLib\\EZGLib\\EZGLib.csproj": {
+    "D:\\Projects\\GITHUB\\EZGLib\\EZGLib\\EZGLib\\EZGLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stan0\\source\\repos\\EZGLib\\EZGLib\\EZGLib.csproj",
+        "projectUniqueName": "D:\\Projects\\GITHUB\\EZGLib\\EZGLib\\EZGLib\\EZGLib.csproj",
         "projectName": "EZGLib",
-        "projectPath": "C:\\Users\\stan0\\source\\repos\\EZGLib\\EZGLib\\EZGLib.csproj",
+        "projectPath": "D:\\Projects\\GITHUB\\EZGLib\\EZGLib\\EZGLib\\EZGLib.csproj",
         "packagesPath": "C:\\Users\\stan0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stan0\\source\\repos\\EZGLib\\EZGLib\\obj\\",
+        "outputPath": "D:\\Projects\\GITHUB\\EZGLib\\EZGLib\\EZGLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

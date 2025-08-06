@@ -9,3 +9,15 @@ C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.dll
 C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\refint\EZGLib.dll
 C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.pdb
 C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\ref\EZGLib.dll
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\bin\Debug\net8.0-windows\EZGLib.deps.json
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\bin\Debug\net8.0-windows\EZGLib.dll
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\bin\Debug\net8.0-windows\EZGLib.pdb
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.AssemblyInfoInputs.cache
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.AssemblyInfo.cs
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.csproj.CoreCompileInputs.cache
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.sourcelink.json
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.dll
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\refint\EZGLib.dll
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.pdb
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\ref\EZGLib.dll

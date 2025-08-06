@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EZGLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb6a05a0a960146a79b3f6b4f72b483028305506")]
 [assembly: System.Reflection.AssemblyProductAttribute("EZGLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EZGLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
