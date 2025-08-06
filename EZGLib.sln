@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZGLib", "EZGLib\EZGLib.csproj", "{C6EF04BB-15E3-468D-9EFC-7A11FD4CBBAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6EF04BB-15E3-468D-9EFC-7A11FD4CBBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EF04BB-15E3-468D-9EFC-7A11FD4CBBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EF04BB-15E3-468D-9EFC-7A11FD4CBBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EF04BB-15E3-468D-9EFC-7A11FD4CBBAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A95224EF-A237-4032-BB30-1546915B1A68}
+	EndGlobalSection
+EndGlobal

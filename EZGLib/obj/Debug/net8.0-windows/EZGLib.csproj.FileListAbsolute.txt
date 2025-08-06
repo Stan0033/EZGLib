@@ -1,0 +1,11 @@
+C:\Users\stan0\source\repos\EZGLib\EZGLib\bin\Debug\net8.0-windows\EZGLib.deps.json
+C:\Users\stan0\source\repos\EZGLib\EZGLib\bin\Debug\net8.0-windows\EZGLib.dll
+C:\Users\stan0\source\repos\EZGLib\EZGLib\bin\Debug\net8.0-windows\EZGLib.pdb
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.AssemblyInfoInputs.cache
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.AssemblyInfo.cs
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.csproj.CoreCompileInputs.cache
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.dll
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\refint\EZGLib.dll
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.pdb
+C:\Users\stan0\source\repos\EZGLib\EZGLib\obj\Debug\net8.0-windows\ref\EZGLib.dll
