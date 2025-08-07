@@ -1,8 +1,15 @@
 Very Simple Geometry (VSG) is a lightweight, human-readable file format designed for compact and efficient storage of 3D mesh data. 
 
+
+
 I made this, inspired by other simple 3d storing formats like OBJ and STL.
 
+It's extremely compact and human-readable — a whole mesh is a single line:
 
+<vertex_data|triangle_indices|color>
+
+Example:
+<0 0 0 0 1 0 0 0 1 0 0 0 1 1 0 1 0 0 0 1 0 0 1 1|0 1 2|255 255 255>
 
 Below is an example in C# demonstrating how to load and save a model using the EZGLib implementation of VSG:
 
