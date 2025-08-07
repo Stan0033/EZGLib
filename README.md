@@ -8,9 +8,11 @@ Below is an example in C# demonstrating how to load and save a model using the E
 
  
 // create model 
+
 var model = new VerySimpleGeometry.VSG_Model();
 
 // load from file
+
 string path = VerySimpleGeometry.SelectVsgOrObjFile();
 if (path.Length > 0)
 {
@@ -25,6 +27,7 @@ if (path.Length > 0)
 }
 
 // save the model 
+
 string savePath = VerySimpleGeometry.SaveVsgOrObjFile();
 if (savePath.Length > 0)
 {
