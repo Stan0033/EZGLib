@@ -31,8 +31,10 @@ namespace EZGLib
                 }
                 // save the model 
                 string savePath = SaveVsgOrObjFile();
+
                 if (savePath.Length > 0)
                 {
+                   
                     if (Path.GetExtension(savePath).ToLower() == ".vsg")
                     {
                         model.Save(path);
@@ -42,6 +44,10 @@ namespace EZGLib
                         model.WriteOBJ(savePath);
                     }
 
+                }
+                else
+                {
+                    MessageBox.Show("Empty save path");
                 }
             }
         }
@@ -265,7 +271,7 @@ namespace EZGLib
                             };
                         }
 
-                        var parts = line.Substring(2).Split(' ');
+                        var parts = line.Substring(2).Split(' ', StringSplitOptions.RemoveEmptyEntries);
                         var indices = new List<int>();
 
                         foreach (var part in parts)
@@ -275,7 +281,7 @@ namespace EZGLib
                             int vtIdx = comps.Length > 1 && comps[1] != "" ? int.Parse(comps[1]) - 1 : vIdx;
                             int vnIdx = comps.Length > 2 && comps[2] != "" ? int.Parse(comps[2]) - 1 : vIdx;
 
-                            // Create a unique key to identify a unique combination
+                            // Unique combination key
                             int key = (vIdx << 16) ^ (vtIdx << 8) ^ vnIdx;
 
                             if (!vertexCache.TryGetValue(key, out VS_Vertex vertex))
@@ -293,12 +299,17 @@ namespace EZGLib
                             indices.Add(currentMesh.vertices.IndexOf(vertex));
                         }
 
-                        currentMesh.triangles.Add(new VS_Triangle(
-                            currentMesh.vertices[indices[0]],
-                            currentMesh.vertices[indices[1]],
-                            currentMesh.vertices[indices[2]]
-                        ));
+                        // Triangulation (fan method)
+                        for (int i = 1; i < indices.Count - 1; i++)
+                        {
+                            currentMesh.triangles.Add(new VS_Triangle(
+                                currentMesh.vertices[indices[0]],
+                                currentMesh.vertices[indices[i]],
+                                currentMesh.vertices[indices[i + 1]]
+                            ));
+                        }
                     }
+
                 }
 
                 if (currentMesh != null)
@@ -318,7 +329,7 @@ namespace EZGLib
                     sb.Append("<");
                     foreach (VS_Vertex v in vertices)
                     {
-                        sb.Append($"{v.Position.X} {v.Position.Y} {v.Position.Z} {v.Normal.X} {v.Normal.Y} {v.Normal.Z} {v.UV.X} {v.UV.Y}");
+                        sb.Append($"{v.Position.X} {v.Position.Y} {v.Position.Z} {v.Normal.X} {v.Normal.Y} {v.Normal.Z} {v.UV.X} {v.UV.Y} ");
                     }
                     sb.Append("|");
                     foreach (var triangle in triangles)

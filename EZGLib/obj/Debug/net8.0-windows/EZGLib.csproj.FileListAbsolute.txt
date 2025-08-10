@@ -21,3 +21,5 @@ D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.dll
 D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\refint\EZGLib.dll
 D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.pdb
 D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\ref\EZGLib.dll
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.csproj.AssemblyReference.cache
+D:\Projects\GITHUB\EZGLib\EZGLib\EZGLib\obj\Debug\net8.0-windows\EZGLib.csproj.Up2Date

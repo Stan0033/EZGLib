@@ -7,4 +7,10 @@
      <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="EZGLib">
+      <HintPath>C:\Users\stan0\source\repos\VSG_Converter\VSG_Converter\EZGLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
