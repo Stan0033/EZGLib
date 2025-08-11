@@ -219,8 +219,13 @@ namespace EZGLib
                 foreach (string rawLine in lines)
                 {
                     string line = rawLine.Trim();
+                    if (line.Length == 0) continue;
+                    if (line.StartsWith("#"))
+                    {
+                        continue;
+                    }
 
-                    if (line.StartsWith("o "))
+                    else if (line.StartsWith("o "))
                     {
                         if (currentMesh != null)
                             meshes.Add(currentMesh);
@@ -235,7 +240,9 @@ namespace EZGLib
                     }
                     else if (line.StartsWith("v "))
                     {
-                        var parts = line.Split(' ');
+                        var parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                        if (parts.Length < 4) continue;
+
                         positions.Add(new Vector3(
                             float.Parse(parts[1]),
                             float.Parse(parts[2]),
@@ -244,7 +251,9 @@ namespace EZGLib
                     }
                     else if (line.StartsWith("vt "))
                     {
-                        var parts = line.Split(' ');
+                        var parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                        if (parts.Length < 3) continue;
+
                         uvs.Add(new Vector2(
                             float.Parse(parts[1]),
                             float.Parse(parts[2])
@@ -252,7 +261,9 @@ namespace EZGLib
                     }
                     else if (line.StartsWith("vn "))
                     {
-                        var parts = line.Split(' ');
+                        var parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                        if (parts.Length < 4) continue;
+
                         normals.Add(new Vector3(
                             float.Parse(parts[1]),
                             float.Parse(parts[2]),
@@ -277,9 +288,12 @@ namespace EZGLib
                         foreach (var part in parts)
                         {
                             var comps = part.Split('/');
+                            if (comps.Length == 0 || string.IsNullOrEmpty(comps[0]))
+                                continue;
+
                             int vIdx = int.Parse(comps[0]) - 1;
-                            int vtIdx = comps.Length > 1 && comps[1] != "" ? int.Parse(comps[1]) - 1 : vIdx;
-                            int vnIdx = comps.Length > 2 && comps[2] != "" ? int.Parse(comps[2]) - 1 : vIdx;
+                            int vtIdx = (comps.Length > 1 && !string.IsNullOrEmpty(comps[1])) ? int.Parse(comps[1]) - 1 : vIdx;
+                            int vnIdx = (comps.Length > 2 && !string.IsNullOrEmpty(comps[2])) ? int.Parse(comps[2]) - 1 : vIdx;
 
                             // Unique combination key
                             int key = (vIdx << 16) ^ (vtIdx << 8) ^ vnIdx;
